@@ -1,5 +1,4 @@
-# FedDGL
-
+## FedDGL: Federated Dynamic Graph Learning for Temporal Evolution and Data Heterogeneity
 ## Overview
 
 Federated graph learning advances the field of federated learning by enabling privacy-preserving collaborative training on distributed graph data. Conventional federated graph learning methods excel in handling data heterogeneity but typically assume static graph data, whereas real-world graphs are dynamically changing. Combining traditional federated graph learning with dynamic graph neural networks can handle dynamic data but often neglects previously learned knowledge, reducing generalization for both global and personalized models. This paper introduces FedDGL, a novel framework that tackles the challenges of temporal evolution and data heterogeneity in federated dynamic graph learning. Unlike conventional methods, FedDGL captures temporal dynamics through a global knowledge distillation-based method and manages client heterogeneity via a global prototype-based regularization method. Our framework incorporates contrastive learning to generate global prototypes, enhancing feature representation. Additionally, it employs a prototype similarity-based personalized aggregation method for efficient adaptation to both local and global data distributions. Experimental results across multiple benchmark datasets demonstrate FedDGL's significant performance improvements over state-of-the-art methods, achieving 9.02% and 8.77% gains in local and global testing, respectively, compared to FedAvg. These findings underscore FedDGL's effectiveness in enhancing personalized and global model performance in dynamic, heterogeneous federated graph learning environments.
@@ -41,3 +40,19 @@ We included a demo script `run.bat` which reproduces our experiments for the pre
 run.bat
 ```
 
+## Citation
+If you find this project helpful, please consider to cite the following paper:
+```
+@inproceedings{xie2024FedDGL,
+  author={Xie, Zaipeng and Li, Likun and Chen, Xiangbin and Yu, Hao and Huang, Qian},
+  booktitle    = {Asian Conference on Machine Learning, {ACML} 2024, 5-8 December, Hanoi, Vietnam},
+  series       = {Proceedings of Machine Learning Research},
+  title={FedDGL: Federated Dynamic Graph Learning for Temporal Evolution and Data Heterogeneity}, 
+  year={2024},
+  volume={260},
+  number={},
+  pages={1-16}  
+}
+```
+## Acknowledgements
+We built our project based on the foundational work found in
