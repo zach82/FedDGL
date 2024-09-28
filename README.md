@@ -55,4 +55,5 @@ If you find this project helpful, please consider to cite the following paper:
 }
 ```
 ## Acknowledgements
-We built our project based on the foundational work found in
+Special thanks to **[Likun Li](https://github.com/SpriteColor)** for developing and implementing the program used in this research. His dedication and hard work were essential to the success of this project.
+We built our project based on the foundational work found.
